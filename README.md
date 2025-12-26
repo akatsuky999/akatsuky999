@@ -1,4 +1,4 @@
-# Hi, I'm Mingzhao Li 👋
+# Hi, I'm LI Mingzhao 👋
 
 🎓 MSc Student in Data-Driven Modeling (DDM), HKUST  
 🔬 Part-time Research Assistant, PolyU
