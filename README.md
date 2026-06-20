@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/where-when.svg" width="100%" alt="Akatsuky's curious agent wandering through space and time" />
+  <img src="./assets/where-when.svg?v=20260621-2" width="100%" alt="Akatsuky's curious agent wandering through space and time" />
 </p>
 
 <p align="center">
