@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
-  <title id="title">akatsuky — somewhere between spacetime and playtime</title>
+  <title id="title">Akatsuky — somewhere between spacetime and playtime</title>
   <desc id="desc">An animated curious agent takes a wandering route through a field of spatio-temporal trajectories.</desc>
 
   <defs>
@@ -69,13 +69,13 @@
 
     <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
       <text class="muted" x="64" y="76" font-size="13" letter-spacing="3">HELLO FROM</text>
-      <text class="ink" x="62" y="143" font-family="ui-rounded, 'SF Pro Rounded', system-ui, sans-serif" font-size="52" font-weight="750">akatsuky.</text>
+      <text class="ink" x="62" y="143" font-family="'Comic Sans MS', 'Comic Sans', cursive" font-size="46" font-weight="bold">Akatsuky.</text>
       <text class="muted" x="64" y="185" font-size="16">somewhere between spacetime and playtime</text>
 
       <g transform="translate(63 220)">
-        <rect class="tag" width="214" height="35" rx="17.5"/>
+        <rect class="tag" width="238" height="35" rx="17.5"/>
         <circle cx="19" cy="17.5" r="4" fill="#ff7a90"/>
-        <text class="tag-text" x="33" y="23" font-size="13">research · code · tools</text>
+        <text class="tag-text" x="34" y="22.5" font-size="12.5">research · code · tools</text>
       </g>
     </g>
 
