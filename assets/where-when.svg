@@ -47,8 +47,8 @@
       75%, 100% { transform: scale(1.8); opacity: 0; }
     }
     @keyframes blink {
-      0%, 58%, 100% { opacity: 0; transform: translateY(4px); }
-      64%, 88% { opacity: 1; transform: translateY(0); }
+      0%, 58%, 100% { opacity: 0; }
+      64%, 88% { opacity: 1; }
     }
     @media (prefers-color-scheme: dark) {
       #bg stop:first-child { stop-color: #101722; }
@@ -74,7 +74,7 @@
 
     <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
       <text class="muted" x="64" y="76" font-size="13" letter-spacing="3">HELLO FROM</text>
-      <text class="ink" x="60" y="148" font-family="ui-rounded, 'SF Pro Rounded', system-ui, sans-serif" font-size="66" font-weight="750">akatsuky.</text>
+      <text class="ink" x="62" y="143" font-family="ui-rounded, 'SF Pro Rounded', system-ui, sans-serif" font-size="52" font-weight="750">akatsuky.</text>
       <text class="muted" x="64" y="185" font-size="16">somewhere between spacetime and playtime</text>
 
       <g transform="translate(63 220)">
