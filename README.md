@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <sub>🎓 SEU &nbsp;·&nbsp; 🎓 HKUST &nbsp;·&nbsp; 🔬 PolyU</sub>
+  <sub>🎓 SEU &nbsp;·&nbsp; 🎓 HKUST &nbsp;·&nbsp; 🔬 PolyU &nbsp;·&nbsp; 🔬 CAIR(HK)</sub>
 </p>
 
 <p align="center">
