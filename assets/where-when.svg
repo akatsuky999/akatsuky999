@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">akatsuky — somewhere between spacetime and playtime</title>
+  <desc id="desc">An animated curious agent takes a wandering route through a field of spatio-temporal trajectories.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf5"/>
+      <stop offset="1" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <linearGradient id="path-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a90"/>
+      <stop offset="0.52" stop-color="#a26cf3"/>
+      <stop offset="1" stop-color="#4db7d8"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.25" fill="#7d8590" opacity="0.18"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="round">
+      <rect x="4" y="4" width="952" height="292" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .shell { fill: url(#bg); stroke: #d8dee4; }
+    .ink { fill: #24292f; }
+    .muted { fill: #66707b; }
+    .grid-line { stroke: #57606a; }
+    .ghost-path { stroke: #7d8590; }
+    .tag { fill: #ffffff; stroke: #d8dee4; }
+    .tag-text { fill: #57606a; }
+    .route {
+      stroke-dasharray: 3 11;
+      animation: route 12s linear infinite;
+    }
+    .pulse { animation: pulse 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .blink { animation: blink 7s ease-in-out infinite; }
+    @keyframes route { to { stroke-dashoffset: -140; } }
+    @keyframes pulse {
+      0% { transform: scale(.45); opacity: .85; }
+      75%, 100% { transform: scale(1.8); opacity: 0; }
+    }
+    @keyframes blink {
+      0%, 58%, 100% { opacity: 0; transform: translateY(4px); }
+      64%, 88% { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-color-scheme: dark) {
+      #bg stop:first-child { stop-color: #101722; }
+      #bg stop:last-child { stop-color: #111827; }
+      .shell { stroke: #30363d; }
+      .ink { fill: #f0f3f6; }
+      .muted { fill: #9da7b1; }
+      .grid-line { stroke: #8c959f; }
+      .ghost-path { stroke: #8c959f; }
+      .tag { fill: #161b22; stroke: #30363d; }
+      .tag-text { fill: #b7c0ca; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .route, .pulse, .blink { animation: none; }
+    }
+  </style>
+
+  <rect class="shell" x="4" y="4" width="952" height="292" rx="28"/>
+  <g clip-path="url(#round)">
+    <rect x="4" y="4" width="952" height="292" fill="url(#dots)"/>
+    <circle cx="895" cy="-5" r="132" fill="#a26cf3" opacity="0.08"/>
+    <circle cx="580" cy="314" r="155" fill="#4db7d8" opacity="0.07"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+      <text class="muted" x="64" y="76" font-size="13" letter-spacing="3">HELLO FROM</text>
+      <text class="ink" x="60" y="148" font-family="ui-rounded, 'SF Pro Rounded', system-ui, sans-serif" font-size="66" font-weight="750">akatsuky.</text>
+      <text class="muted" x="64" y="185" font-size="16">somewhere between spacetime and playtime</text>
+
+      <g transform="translate(63 220)">
+        <rect class="tag" width="214" height="35" rx="17.5"/>
+        <circle cx="19" cy="17.5" r="4" fill="#ff7a90"/>
+        <text class="tag-text" x="33" y="23" font-size="13">status: still curious</text>
+      </g>
+    </g>
+
+    <g opacity="0.48" fill="none" stroke-linecap="round">
+      <path class="ghost-path" d="M470 88 C560 33 646 154 735 91 S870 55 938 104" stroke-width="1.5" stroke-dasharray="2 9"/>
+      <path class="ghost-path" d="M474 226 C564 273 620 142 707 203 S840 259 941 184" stroke-width="1.5" stroke-dasharray="2 9"/>
+    </g>
+
+    <g class="grid-line" opacity="0.28" stroke-width="1">
+      <path d="M494 260 H924"/>
+      <path d="M518 53 V264"/>
+      <path d="M518 260 l-7 -7 M518 260 l-7 7"/>
+      <path d="M518 260 l7 -7 M518 260 l7 7"/>
+      <path d="M518 53 l-7 7 M518 53 l7 7"/>
+      <path d="M924 260 l-7 -7 M924 260 l-7 7"/>
+    </g>
+    <g class="muted" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" opacity="0.7">
+      <text x="500" y="47">where</text>
+      <text x="891" y="280">when</text>
+    </g>
+
+    <path id="wander" d="M520 222 C565 241 586 113 649 137 C704 158 717 235 775 191 C819 157 838 92 919 111" fill="none"/>
+    <use href="#wander" fill="none" stroke="url(#path-gradient)" stroke-width="3.5" stroke-linecap="round" opacity="0.95"/>
+    <use class="route" href="#wander" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.72"/>
+
+    <g>
+      <circle class="pulse" r="13" fill="none" stroke="#ff7a90" stroke-width="2"/>
+      <circle r="7" fill="#ff7a90" filter="url(#glow)"/>
+      <circle r="2.2" fill="#ffffff"/>
+      <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#wander"/>
+      </animateMotion>
+    </g>
+
+    <g class="blink" transform="translate(736 84)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <rect class="tag" width="168" height="34" rx="17"/>
+      <path class="tag" d="M25 31 l-7 13 17-11"/>
+      <text class="tag-text" x="17" y="22" font-size="12">taking the scenic route</text>
+    </g>
+  </g>
+</svg>
