@@ -1,20 +1,18 @@
-## 👋 Hi, I'm LI Mingzhao (akatsuky)
+<p align="center">
+  <img src="./assets/where-when.svg" width="100%" alt="Akatsuky's curious agent wandering through space and time" />
+</p>
 
-🎓 Traffic Engineering @ Southeast University  
-🎓 Data-Driven Modeling @ HKUST  
-🔬 Research Assistant @ PolyU  
+<p align="center">
+  <samp>
+    Mingzhao Li · turning <b>where + when</b> into models,<br>
+    and occasionally turning models into weird little tools.
+  </samp>
+</p>
 
+<p align="center">
+  <code>spatio-temporal data</code> · <code>agents</code> · <code>LLMs for science</code>
+</p>
 
-### 🔍 What I care about
-- 🕒 Spatio-temporal data & time series  
-- 🤖 Spatio-temporal agents  
-- 🧠 LLMs for Science  
-
-
-📂 Here I share my research-related work, including:
-- 📄 paper-related code  
-- 🛠️ funny tools
-
----
-
-Hobbies：🏸 💪 
+<p align="center">
+  <sub>SEU → HKUST → PolyU &nbsp;·&nbsp; 🏸 while the model is training</sub>
+</p>
